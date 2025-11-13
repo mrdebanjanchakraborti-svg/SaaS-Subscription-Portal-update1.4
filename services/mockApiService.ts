@@ -1,3 +1,4 @@
+
 import { User, UserRole, Customer, Software, Subscription, ProjectStatus, SubscriptionPlan, Invoice, Commission, DiscountCoupon, DiscountType, SupportTicket, TicketStatus, TicketReply, Notification, TicketPriority, NotificationType, EmailLog, SmtpConfig, AppSettings, BrandingSettings, PaymentGatewaySettings } from '../types';
 import { LOGO_BASE64 } from '../constants';
 
@@ -200,7 +201,7 @@ const loadFromStorage = <T>(key: string, defaultValue: T): T => {
 
 // Initialize settings from localStorage or with default values.
 // This ensures that settings persist across page refreshes.
-let appSettings: AppSettings = loadFromStorage<AppSettings>('appSettings', { baseUrl: 'https://saas.com' });
+let appSettings: AppSettings = loadFromStorage<AppSettings>('appSettings', { baseUrl: 'https://inflow.co.in' });
 let smtpConfig: SmtpConfig | null = loadFromStorage<SmtpConfig | null>('smtpConfig', null);
 let brandingSettings: BrandingSettings = loadFromStorage<BrandingSettings>('brandingSettings', { logo: LOGO_BASE64, banner: null });
 let paymentGatewaySettings: PaymentGatewaySettings = loadFromStorage<PaymentGatewaySettings>('paymentGatewaySettings', {
